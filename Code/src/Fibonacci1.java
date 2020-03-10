@@ -1,3 +1,6 @@
+/**
+ * 动态规划
+ */
 public class Fibonacci1 {
     private static int fib(int n){
         int f = 1;
