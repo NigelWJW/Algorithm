@@ -1,3 +1,5 @@
+package Introduction;
+
 /**
  * 数组求和的二分递归法
  */

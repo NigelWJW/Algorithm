@@ -1,3 +1,5 @@
+package Introduction;
+
 public class Sum2 {
     private static int sum(int n){
         int total = 1;
