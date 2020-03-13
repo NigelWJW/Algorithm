@@ -1,4 +1,4 @@
-package Introduction;
+package Sort;
 
 /**
  * 冒泡排序的消除重复检验版本，使用标志可以提前推出
