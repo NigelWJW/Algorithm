@@ -14,7 +14,7 @@ public class mergeSort {
         if (low >= high) return;
         int mid = low + ((high - low) >> 1);
         mergeSort(arr, low, mid);
-        mergeSort(arr, mid + 1,high);
+        mergeSort(arr, mid+1 ,high);
         merge(arr, low, mid, high);
         print(arr);
     }
@@ -45,10 +45,10 @@ public class mergeSort {
 
     public static void main(String[] args) {
         int[] arr = {6, 9, 1, 4, 5, 8, 7, 0, 2, 3};
-        System.out.print("排序前:  ");
+        System.out.print("before:  ");
         print(arr);
         mergeSort(arr);
-        System.out.print("排序后:  ");
+        System.out.print("after:  ");
         print(arr);
     }
 
