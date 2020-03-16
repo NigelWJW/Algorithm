@@ -1,4 +1,4 @@
-package Sort;
+package Search;
 
 /**
  * 二分查找法版本一，即简单的3分法

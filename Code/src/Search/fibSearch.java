@@ -1,4 +1,4 @@
-package Sort;
+package Search;
 
 /**
  * Fibonacci查找法,使用fibonacci数列的项来代替简单的中间项，减少失败的查找次数，每次都从左查找可局部建立左长右短的查找结构，类似左式堆

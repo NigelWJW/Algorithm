@@ -1,4 +1,4 @@
-package Sort;
+package Search;
 
 /**
  * 二分查找法版本三，这里似乎会遗漏mi但是不会，因为数学中的不变性

@@ -1,4 +1,4 @@
-package Sort;
+package Search;
 
 /**
  * 二分查找法版本二，采用二分法，左闭右开区间
