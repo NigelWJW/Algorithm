@@ -1,7 +1,7 @@
 package SeqVector;
 
 public class Vector implements VectorList{
-    final int DEFAULTSIZE = 100;
+    final int DEFAULTSIZE = 20;
     int rank;
     int capacity;
     int size;
@@ -11,6 +11,12 @@ public class Vector implements VectorList{
     /**
      * 初始化数组
      */
+    public Vector(){
+        capacity = DEFAULTSIZE;
+        elem = new int[capacity];
+        size = 0;
+    }
+
     public Vector(int[] A,int n){
         copyfrom(A,0,n);
     }
@@ -25,7 +31,7 @@ public class Vector implements VectorList{
      */
     @Override
     public void copyfrom(int[] A, int lo, int hi) {
-        int[] elem = new int[ capacity= 2*(lo+hi)];
+        elem = new int[ capacity= 2*(lo+hi)];
         size = 0;
         while(lo<hi){
             elem[lo++] = A[lo++];
@@ -67,8 +73,12 @@ public class Vector implements VectorList{
 
     @Override
     public int find(int e, int lo, int hi) {
-        while((lo<hi--)&&(e!= elem[lo]));
-        return hi;
+        for (int i = lo;i<=hi;i++){
+            if (e == elem[i]){
+                return i;
+            }
+        }
+        return -1;
     }
 
     /**
@@ -80,11 +90,8 @@ public class Vector implements VectorList{
             elem[i] = elem[i-1];
         }
         elem[r] = e;
-        size++;
         return r;
     }
-
-
 
     /**
      * 数组删除
@@ -94,10 +101,20 @@ public class Vector implements VectorList{
         if (lo == hi){
             return 0;
         }
-        while (hi< size){
+        while (hi < size){
             elem[lo++] = elem[hi++];
+            for (int i:elem
+            ) {
+                System.out.print(i+" ");
+            }
+            System.out.println();
         }
-        size = hi;
+        for (int in = lo+1;in<=hi;in++){
+            elem[in] = 0;
+        }
+        size = lo;
+
+        System.out.println(size);
         return hi - lo;
     }
 
@@ -158,6 +175,15 @@ public class Vector implements VectorList{
         size = ++i;
         shrink();
         return j-i;
+    }
+
+
+    public void print(int[] A){
+        for (int i:A
+             ) {
+            System.out.print(i+" ");
+        }
+        System.out.println();
     }
 
 
