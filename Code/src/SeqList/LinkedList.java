@@ -1,7 +1,7 @@
 package SeqList;
 
 /**
- * 列表类的具体实现
+ * 双向链表类的具体实现
  * @param <E>
  */
 public class LinkedList<E> {

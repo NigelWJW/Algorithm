@@ -1,5 +1,8 @@
 package SeqList;
 
+/**
+ * 链表类测试类
+ */
 public class LinkListTest {
     public static void main(String[] args){
         LinkedList<Integer> linklist = new LinkedList<Integer>();

@@ -1,7 +1,7 @@
 package SeqList;
 
 /**
- * 节点类
+ * 双向链表节点类
  * @param <T>
  */
 public class ListNode<T> {
