@@ -1,6 +1,5 @@
 package Stack;
 
-
 /**
  * 使用自建结点单链表来实现栈
  */
@@ -37,10 +36,8 @@ public class LinkedListStack<T> {
      *压栈操作
      */
     public boolean push(T data){
-        StackNode<T> temp = new StackNode<T>(data);
-        temp.succ = stacktop;
-        stacktop = temp;
-        System.out.print(data+" ");
+        stacktop = new StackNode<T>(data, stacktop);
+        System.out.println(data+" ");
         size++;
         return true;
     }
@@ -49,10 +46,11 @@ public class LinkedListStack<T> {
      * 出栈操作
      */
     public T pop(){
-        T data = stacktop.data;
-        stacktop=stacktop.succ;
+        StackNode<T> oldTop = stacktop;
+        stacktop = stacktop.succ;
+        oldTop.succ = null;
         size--;
-        return data;
+        return oldTop.data;
     }
 
     /**
@@ -61,6 +59,12 @@ public class LinkedListStack<T> {
     public int getSize(){
         return this.size;
     }
+
+    public T getStack(){
+        return stacktop.data;
+    }
+
+
 
     @Override
     public String toString() {

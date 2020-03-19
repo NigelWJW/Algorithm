@@ -11,9 +11,13 @@ public class LinkedListStackTest {
         }
 
         System.out.println();
+        System.out.println(lls.getSize());
 
-        System.out.println(lls.pop());
-        System.out.println(lls.pop());
+        for (int i =0;i<10;i++){
+            System.out.print(lls.pop() +" " );
+        }
+
+        System.out.println();
         System.out.println(lls.getSize());
     }
 }

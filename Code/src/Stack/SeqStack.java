@@ -8,7 +8,7 @@ public class SeqStack<T> {
     public final int DEFAULTSIZE = 20;
     public int capacity;
     public int size ;
-    public int[] stack;
+    public Object[] stack;
     public int top;
 
     /**
@@ -18,14 +18,14 @@ public class SeqStack<T> {
     public SeqStack(){
         capacity = DEFAULTSIZE;
         size = 0;
-        stack = new int[capacity];
+        stack = new Object[capacity];
         top = -1;
     }
 
     public SeqStack(int maxsize){
         capacity = maxsize;
         size = 0;
-        stack = new int[capacity];
+        stack = new Object[capacity];
         top = -1;
     }
 
@@ -51,9 +51,10 @@ public class SeqStack<T> {
             System.out.println(" 栈已空 ");
             return false;
         }
-        int data = stack[top--];
-        stack[top+1] = 0;
-        System.out.println(data);
+        Object data = stack[top--];
+        stack[top+1] = null;
+        size--;
+        System.out.print(data+" ");
         return true;
 
     }
@@ -64,7 +65,7 @@ public class SeqStack<T> {
      */
     public boolean push(int e){
         if (top ==capacity-1){
-            System.out.println(" 栈已满 ");
+            System.out.print(" 栈已满 ");
             return false;
         }
         stack[++top] = e;
@@ -77,7 +78,7 @@ public class SeqStack<T> {
      *打印栈
      */
     public void print (){
-        for (int i:stack
+        for (Object i:stack
              ) {
             System.out.print(i + " ");
         }
