@@ -44,7 +44,7 @@ public class Vector implements VectorList{
      */
     @Override
     public void expand() {
-        if (size<capacity) return;
+        if (size>capacity) return;
         if (capacity<DEFAULTSIZE) capacity = DEFAULTSIZE;
         int[] oldelem = elem;
         elem = new int[capacity<<1];
