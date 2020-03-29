@@ -81,18 +81,30 @@ public class LinkedListBinaryTree<T> {
         return true;
     }
 
-    public boolean insertAsLeft(BinaryTreeNode<T> x,T data){
-        size++;
-        x.insertAsLc(data);
-        updataHeightAbove(x);
-        return true;
-    }
+    public BinaryTreeNode<T> addNode( BinaryTreeNode<T> parent, T data, boolean left) {
+        if (data == null) {
+            throw new NullPointerException();
+        }
 
-    public boolean insertAsRight(BinaryTreeNode<T> x,T data){
-        size++;
-        x.insertAsRc(data);
-        updataHeightAbove(x);
-        return true;
+        if (parent == null) {
+            throw new IllegalStateException("节点为null，不能添加子节点");
+        }
+
+        if (left && parent.lc != null) {
+            throw new IllegalStateException(parent + "节点已经存在左节点");
+        }
+
+        if (!left && parent.rc != null) {
+            throw new IllegalStateException(parent + "节点已经存在右节点");
+        }
+
+        BinaryTreeNode<T> node = new BinaryTreeNode<T>(data);
+        if (left) {
+            parent.lc = node;
+        } else {
+            parent.rc = node;
+        }
+        return node;
     }
 
     /**
@@ -101,8 +113,8 @@ public class LinkedListBinaryTree<T> {
     public void preorder(BinaryTreeNode<T> node){
         if (node == null){
             System.out.println("节点为空！ ");
+            return;
         }
-        assert node != null;
         System.out.println(node.data);
         preorder(node.lc);
         preorder(node.rc);
@@ -114,8 +126,8 @@ public class LinkedListBinaryTree<T> {
     public void inorder(BinaryTreeNode<T> node){
         if (node == null){
             System.out.println("节点为空！ ");
+            return;
         }
-        assert node != null;
         preorder(node.lc);
         System.out.println(node.data);
         preorder(node.rc);
@@ -127,8 +139,8 @@ public class LinkedListBinaryTree<T> {
     public void postorder(BinaryTreeNode<T> node){
         if (node == null){
             System.out.println("节点为空！ ");
+            return;
         }
-        assert node != null;
         preorder(node.lc);
         preorder(node.rc);
         System.out.println(node.data);
@@ -140,6 +152,7 @@ public class LinkedListBinaryTree<T> {
     public void levelorder(){
         if (root ==null){
             System.out.println("出错啦 ");
+            return;
         }
         Deque<BinaryTreeNode<T>> Q = new ArrayDeque<>();
         Q.addLast(root);
