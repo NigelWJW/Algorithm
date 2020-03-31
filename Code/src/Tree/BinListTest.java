@@ -1,5 +1,9 @@
 package Tree;
 
+/**
+ * 二叉树链表实现测试
+ */
+
 public class BinListTest {
     public static void main(String[] args){
         LinkedListBinaryTree<Integer> llbs = new LinkedListBinaryTree<Integer>(0);
@@ -11,7 +15,9 @@ public class BinListTest {
         BinaryTreeNode<Integer> node2rr = llbs.addNode(node1r,6,false);
 
         llbs.preorder(llbs.root);
-
+        llbs.inorder(llbs.root);
+        llbs.postorder(llbs.root);
+        llbs.levelorder();
 
     }
 }
