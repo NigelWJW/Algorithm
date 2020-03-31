@@ -75,6 +75,9 @@ public class LinkedListBinaryTree<T> {
         }
     }
 
+    /**
+     *添加节点
+     */
     public boolean insertAsRoot(T data){
         size = 1;
         root = new BinaryTreeNode<T>(data);
@@ -101,6 +104,7 @@ public class LinkedListBinaryTree<T> {
         BinaryTreeNode<T> node = new BinaryTreeNode<T>(data);
         if (left) {
             parent.lc = node;
+            size++;
         } else {
             parent.rc = node;
         }
@@ -108,7 +112,7 @@ public class LinkedListBinaryTree<T> {
     }
 
     /**
-     *先序遍历
+     *先序遍历递归版
      */
     public void preorder(BinaryTreeNode<T> node){
         if (node == null){
@@ -121,7 +125,7 @@ public class LinkedListBinaryTree<T> {
     }
 
     /**
-     *中序遍历
+     *中序遍历递归版
      */
     public void inorder(BinaryTreeNode<T> node){
         if (node == null){
@@ -134,7 +138,7 @@ public class LinkedListBinaryTree<T> {
     }
 
     /**
-     *后序遍历
+     *后序遍历递归版
      */
     public void postorder(BinaryTreeNode<T> node){
         if (node == null){
@@ -147,7 +151,7 @@ public class LinkedListBinaryTree<T> {
     }
 
     /**
-     *广度遍历
+     *广度遍历队列实现
      */
     public void levelorder(){
         if (root ==null){
@@ -167,4 +171,5 @@ public class LinkedListBinaryTree<T> {
             }
         }
     }
+
 }
