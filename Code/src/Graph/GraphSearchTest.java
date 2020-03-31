@@ -41,6 +41,7 @@ public class GraphSearchTest {
         g.insertEdge(8, 3);
         System.out.print("广度优先遍历(队列)：");
         g.dfs();
+        g.bfs();
 
     }
 }
