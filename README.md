@@ -42,6 +42,7 @@
     
     + [链表实现二分搜索树的增删查改、先中后广度递归迭代遍历](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Tree/BinarySearchTree.java)
         
+    + [实现AVL二叉平衡搜索树的增删查改](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Tree/AVLTree.java)
 * [数据结构与算法（六）图遍历实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Graph).
 
     + [图的广度BFS深度DFS遍历算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Graph/GraphSearch.java)
