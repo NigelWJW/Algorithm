@@ -43,6 +43,7 @@
     + [链表实现二分搜索树的增删查改、先中后广度递归迭代遍历](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Tree/BinarySearchTree.java)
         
     + [实现AVL二叉平衡搜索树的增删查改](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Tree/AVLTree.java)
+    
 * [数据结构与算法（六）图遍历实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Graph).
 
     + [图的广度BFS深度DFS遍历算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Graph/GraphSearch.java)
@@ -50,6 +51,13 @@
 * [数据结构与算法（七）词典及散列表(哈希表)实现]
 
 * [数据结构与算法（八）优先级队列及堆实现]
+
+    + [最大堆上滤下滤、Floyd建堆、堆排序算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Heap/MaxHeap.java)
+    
+    + [最大堆上滤下滤、Floyd建堆、堆排序算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Heap/MinHeap.java)
+    
+    + [左式堆上滤下滤、Floyd建堆、堆排序算法]
+
 
 * [数据结构与算法（九）串匹配实现]
 
