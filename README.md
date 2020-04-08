@@ -26,6 +26,12 @@
     
     + [逆序输出的进制转换:十进制转换成base进制(递归版)](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Stack/Convert2.java)
     
+    + [栈实现逆波兰表达式]
+    
+    + [试探回溯法实现八皇后问题]
+    
+    + [试探回溯法实现迷宫问题]
+    
 * [数据结构与算法（四）队列及队列应用实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Queue).
 
     + [向量实现单向队列的入队出队](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Queue/SeqQueue.java)
@@ -33,6 +39,8 @@
     + [链表实现单向队列的入队出队](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Queue/LinkedQueue.java)
     
     + [链表实现循环队列的入队出队](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Queue/LoopSeqQueue.java)
+    
+    + [队列应用循环分配器事先银行服务模拟]
         
 * [数据结构与算法（五）二叉树的实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/SeqVector).
 
@@ -44,12 +52,26 @@
         
     + [链表实现AVL二叉平衡搜索树的增删查改、先中后广度递归迭代遍历](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Tree/AVLTree.java)
     
+    + [实现Huffman编码树]
+    
+    + [实现伸展树]
+        
+    + [实现B树及红黑树]
+            
+    + [实现kd树]
+    
 * [数据结构与算法（六）图遍历实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Graph).
 
     + [图的广度BFS和深度DFS遍历算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Graph/GraphSearch.java)
+    
+    + [图的dijkstra算法]
 
 * [数据结构与算法（七）词典及散列表(哈希表)实现]
 
+    + [实现跳转表]
+
+    + [实现散列表及桶排序]
+    
 * [数据结构与算法（八）优先级队列及堆实现]
 
     + [最大堆的上滤下滤、Floyd建堆、堆排序算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Heap/MaxHeap.java)
@@ -58,9 +80,14 @@
     
     + [左式堆上滤下滤、Floyd建堆、堆排序算法]
 
-
 * [数据结构与算法（九）串匹配实现]
 
+    + [实现KMP算法]
+   
+    + [实现BM算法]
+    
+    + [实现karp-Rabin算法]
+    
 * [数据结构与算法（十）排序算法实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Sort).
 
     + [冒泡排序](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/BubbleSort.java	)
@@ -72,7 +99,10 @@
     + [选择排序](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/SelectSort.java)
                 
     + [二路归并版本](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/mergeSort.java)
-
+    
+    + [实现快速排序]
+    
+    + [实现希尔排序]
 
 * [数据结构与算法（十一）查找算法实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Search).
 
