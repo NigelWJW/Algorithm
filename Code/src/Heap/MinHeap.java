@@ -3,6 +3,10 @@ package Heap;
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 
+/**
+ * 最小堆完全二叉树实现，优先级最低的在最顶端
+ * @param <T>
+ */
 public class MinHeap<T extends Comparable<T>> {
     public T[] heap;
     public int size;
@@ -113,7 +117,7 @@ public class MinHeap<T extends Comparable<T>> {
         }
     }
     /**
-     *获取最大值
+     *获取最小值
      */
     public T getMin(){
         if (size == 0){
