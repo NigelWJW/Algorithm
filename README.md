@@ -72,7 +72,7 @@
 
     + [实现散列表及桶排序]
     
-* [数据结构与算法（八）优先级队列及堆实现]
+* [数据结构与算法（八）优先级队列及堆实现](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Heap)
 
     + [最大堆的上滤下滤、Floyd建堆、堆排序算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Heap/MaxHeap.java)
     
