@@ -8,17 +8,15 @@ public class VectorTest {
             v.insert(i,i);
             v.size++;
         }
-
-        System.out.println("size: "+v.size);
-        v.print(v.elem);
-
-        v.insert(10,5);
-        v.print(v.elem);
-
-        System.out.println(v.find(3,0,19));
-
+//        System.out.println("size: "+v.size);
+        v.print();
+//
+//        v.insert(10,5);
+//        v.print(v.elem);
+//
+//        System.out.println(v.find(3,0,19));
         v.remove(1,4);
-        v.print(v.elem);
+        v.print();
 
 
 
