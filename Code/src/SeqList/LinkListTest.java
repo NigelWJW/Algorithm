@@ -1,5 +1,4 @@
 package SeqList;
-
 /**
  * 链表类测试类
  */

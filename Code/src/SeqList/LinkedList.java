@@ -1,21 +1,18 @@
 package SeqList;
-
 /**
  * 双向链表类的具体实现
  * @param <E>
  */
-public class LinkedList<E> {
-    private ListNode<E>  header;
-    private ListNode<E>  trailer;
-    private int size;
-
+public class LinkedList<E extends Comparable<E>> {
+    private ListNode<E>  header;//头节点
+    private ListNode<E>  trailer;//尾结点
+    private int size;//元素个数
     /**
      * 列表类初始化
      */
     public LinkedList(){
         init();
     }
-
     public void init(){
         header = new ListNode<E>(null);
         trailer = new ListNode<E>(null);
@@ -25,23 +22,18 @@ public class LinkedList<E> {
         trailer.succ = null;
         size = 0;
     }
-
-
     /**
      * 获取头尾节点和当前节点个数
      */
     public ListNode<E> getHeader(){
         return header;
     }
-
     public ListNode<E> getTrailer(){
         return trailer;
     }
-
     public int getSize(){
         return size;
     }
-
     /**
      * 前插法
      */
@@ -52,15 +44,13 @@ public class LinkedList<E> {
         ListNode<E> x = header.succ;
         for (int i = 0;i<index;i++){
             x = x.succ;
-//            System.out.println(i);
         }
-        ListNode<E> p =  new ListNode<E>(data,x.pred,x);
+        ListNode<E> p =  new ListNode<E>(data,x.pred,x);//p节点在x和x的前继节点之间，构造器省略了p.pred = x.pred;p.succ = x;
         x.pred.succ= p;
         x.pred = p;
         size++;
         return p;
     }
-
     /**
      * 后插法
      */
@@ -72,17 +62,14 @@ public class LinkedList<E> {
         for (int i = 0;i<index;i++){
             x = x.succ;
         }
-        ListNode<E> p =  new ListNode<E>(data,x,x.succ);
+        ListNode<E> p =  new ListNode<E>(data,x,x.succ);//p节点在x和x的后继节点之间，构造器省略了p.succ = x.succ;p.pred = x;
         x.succ.pred = p;
         x.succ = p;
         size++;
         return p;
-
     }
-
     /**
      * 删除链表节点
-     *
      */
     public void remove(int index){
         ListNode<E> x = header.succ;
@@ -95,9 +82,7 @@ public class LinkedList<E> {
         x.pred = null;
         x.succ = null;
         size--;
-
     }
-
     /**
      * 无序链表查找节点
      */
@@ -115,7 +100,6 @@ public class LinkedList<E> {
         }
         return -1;
     }
-
     /**
      * 无序链表唯一化
      */
@@ -140,8 +124,6 @@ public class LinkedList<E> {
         System.out.println("now size: "+size);
         return oldsize - size;
     }
-
-
     /**
      * 有序链表唯一化
      */
@@ -162,8 +144,6 @@ public class LinkedList<E> {
         }
         return oldsize-size;
     }
-
-
     /**
      * 有序链表的查找
      */
@@ -182,7 +162,6 @@ public class LinkedList<E> {
         return flag;
 
     }
-
     /**
      * 链表打印元素
      */
@@ -194,8 +173,4 @@ public class LinkedList<E> {
         }
         System.out.println();
     }
-
-
-
-
 }
