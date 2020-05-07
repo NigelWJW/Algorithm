@@ -5,8 +5,8 @@ package Stack;
 public class Convert2 {
     public void convert(SeqStack<Integer> s, int n, int base) {
         if (n > 0) {
-            s.push(n % base);
-            convert(s, n / base, base);
+            s.push(n % base);//将余数压栈
+            convert(s, n / base, base);//递归当前数
         }
     }
     public static void main(String[] args) {

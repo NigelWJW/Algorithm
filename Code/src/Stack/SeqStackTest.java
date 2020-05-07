@@ -1,5 +1,4 @@
 package Stack;
-
 /**
  * 顺序栈测试
  */
@@ -16,10 +15,5 @@ public class SeqStackTest {
         System.out.println();
         System.out.println(ss.getSize());
         System.out.println(ss.isEmpty());
-
-
-
     }
-
-
 }

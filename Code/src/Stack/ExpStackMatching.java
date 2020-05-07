@@ -1,6 +1,5 @@
 package Stack;
 import java.util.Stack;
-
 /**
  * 使用java封装栈类实现递归嵌套的括号匹配
  */
@@ -8,7 +7,7 @@ public class ExpStackMatching {
     public boolean Matching(String exp){
         Stack<Character> stack  = new Stack<Character>();
         for (int i = 0;i< exp.length();i++){
-            switch (exp.charAt(i)){
+            switch (exp.charAt(i)){//判定当前字符如果是左括弧入栈，不然判定是否是对应右括弧
                 case '(': case '[': case '{': stack.push(exp.charAt(i));System.out.print(exp.charAt(i));System.out.println(i + " ");break;
                 case ')': if ( !(stack.empty()) && (stack.peek()== '(') ){System.out.print(i + " ");System.out.println(")返回成功 "); stack.pop();}break;
                 case '}': if (!(stack.empty()) && (stack.peek()== '{') ){ System.out.print(i + " ");System.out.println("}返回成功 "); stack.pop();}break;

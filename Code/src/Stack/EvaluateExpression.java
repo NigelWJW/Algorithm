@@ -1,8 +1,5 @@
 package Stack;
-import java.util.Scanner;
 import java.util.Stack;
-import java.io.IOException;
-
 /**
  * 栈的延迟缓冲的表达式求值
  */
@@ -17,7 +14,7 @@ public class EvaluateExpression {
     public static float evaluate(String exp){
         Stack<Integer> opnd = new Stack<>();//运算数栈
         Stack<Character> optr = new Stack<>();//运算符栈
-        int index = 0;
+        int index = 0;//当前字符编号
         optr.push('#');//将结束符提前压入栈
         while ((exp.charAt(index)!= '#') || (optr.peek()!='#')){//字符未结束就继续循环
             if (isDigit(exp.charAt(index))){//判定是否是数字
@@ -26,7 +23,7 @@ public class EvaluateExpression {
             }
             else {//当是运算符时
                 switch (orderBetween(exp.charAt(index),optr)){//比较优先级
-                    case '<': optr.push(exp.charAt(index)); index++;  System.out.println("2");break;//当前符号优先级低
+                    case '<': optr.push(exp.charAt(index)); index++;break;//当前符号优先级低
                     case '=': optr.pop();index++;break;//优先级相等：右括号或者#时，脱括号接收下一个字符
                     case '>':int b = opnd.pop(),a=opnd.pop();opnd.push(calcu(a,b,optr.pop()));break;//优先级高，实施运算并重新入栈
                 }
@@ -34,17 +31,15 @@ public class EvaluateExpression {
         }
         return opnd.pop();//将最后的运算结果出栈
     }
-
     /**
      *返回当前操作符和栈顶操作符的优先级
      */
     public static char orderBetween(char now,Stack<Character> tr){
         char pred = tr.peek();//获得栈顶运算符
-        int nowop = transPri(now);
+        int nowop = transPri(now);//转化为表行列
         int predop = transPri(pred);
         return tablePri(predop,nowop);
     }
-
     /**
      * 将对应运算符转换成对应优先级数组下标
      */
@@ -63,7 +58,6 @@ public class EvaluateExpression {
         }
         return -1;
     }
-
     /**
      *优先级对比表
      */
@@ -82,7 +76,6 @@ public class EvaluateExpression {
         };
         return pri[predop][nowop];
     }
-
     /**
      * 根据元素的操作符计算对应值
      */
@@ -96,7 +89,6 @@ public class EvaluateExpression {
         }
         return 0;
   }
-
     /**
      * 判断是数字或者是运算符
      */

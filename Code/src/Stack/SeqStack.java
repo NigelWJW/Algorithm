@@ -1,48 +1,41 @@
 package Stack;
-
 /**
  * 使用向量来实现栈
  * @param <T>
  */
-public class SeqStack<T> {
-    public final int DEFAULTSIZE = 20;
-    public int capacity;
-    public int size ;
-    public Object[] stack;
-    public int top;
-
+public class SeqStack<T extends Comparable<T>>{
+    public final int DEFAULTSIZE = 20;//默认容量
+    public int capacity;//容量
+    public int size ;//元素个数
+    public Object[] stack;//栈数组
+    public int top;//栈顶指针,初始为-1,
     /**
      * 初始化栈结构
      */
-
     public SeqStack(){
         capacity = DEFAULTSIZE;
         size = 0;
         stack = new Object[capacity];
         top = -1;
     }
-
     public SeqStack(int maxsize){
         capacity = maxsize;
         size = 0;
         stack = new Object[capacity];
         top = -1;
     }
-
     /**
-     *获取当前规模
+     *获取元素个数
      */
     public int getSize(){
         return size;
     }
-
     /**
      *判断栈是否为空
      */
     public boolean isEmpty(){
         return top == -1;
     }
-
     /**
      *删除栈顶元素
      */
@@ -56,9 +49,7 @@ public class SeqStack<T> {
         size--;
         System.out.print(data+" ");
         return true;
-
     }
-
     /**
      *将元素插入栈顶
      * @param e
@@ -72,8 +63,6 @@ public class SeqStack<T> {
         size++;
         return true;
     }
-
-
     /**
      *打印栈
      */
@@ -84,6 +73,4 @@ public class SeqStack<T> {
         }
         System.out.println();
     }
-
-
 }

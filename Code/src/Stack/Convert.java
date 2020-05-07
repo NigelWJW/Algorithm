@@ -5,12 +5,11 @@ package Stack;
 public class Convert {
     public void convert(SeqStack<Integer> s,int n,int base){
         while (n>0){
-            int remainer = n % base;
+            int remainer = n % base;//保存每次余数压栈
             s.push(remainer);
-            n = n/base;
+            n = n/base;//求商
         }
     }
-
     public static void main(String[] args){
         Convert c = new Convert();
         SeqStack<Integer> s = new SeqStack<Integer>();
@@ -21,7 +20,5 @@ public class Convert {
         while (!s.isEmpty()){
             s.pop();
         }
-
     }
-
 }
