@@ -7,8 +7,8 @@ public class SelectSort {
     public void selectsort(int[] array){
         //i可看做哨兵
         for (int i = array.length;i>0;i--){
-            int index = getMax(array,i);
-            swap(array,index,i-1);
+            int index = getMax(array,i);//选出最大值
+            swap(array,index,i-1);//与未排好序的最后一个元素换位
         }
     }
 

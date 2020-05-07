@@ -10,16 +10,16 @@ public class BubbleSort {
         Arr[b] = temp;
     }
     private static void bubblesort(int[] A, int n){
-        boolean sorted = false;
+        boolean sorted = false;//先设置未完全排序
         while(!sorted){
-            sorted = true;
+            sorted = true;//暂定已排好序
             for (int i = 1;i<n;i++){
                 if(A[i-1]>A[i]){
                     swap(A,i-1,i);
-                    sorted = false;
+                    sorted = false;//当有交换时做未排好序
                 }
             }
-            n--;
+            n--;//排序上线减一，每趟最高数就位
         }
     }
     public static void main(String[] args){
