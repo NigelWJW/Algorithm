@@ -44,7 +44,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         if (node.rc == null){
             return node;
         }
-        return getMax(node.rc);
+        return getMax(node.rc);//迭代到最右子树即最大者
     }
     /**
      *获取最小者
@@ -59,7 +59,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         if (node.lc == null){
             return node;
         }
-        return getMin(node.lc);
+        return getMin(node.lc);//迭代到最左子树即最小者
     }
     /**
      *查找元素
@@ -71,10 +71,10 @@ public class BinarySearchTree<T extends Comparable<T>> {
         }
         assert node != null;
         if (e.compareTo(node.data)<0){
-            return find(node.lc,e);
+            return find(node.lc,e);//比当前小则递归进入左子树
         }
         else if (e.compareTo(node.data)>0){
-            return find(node.rc,e);
+            return find(node.rc,e);//比当前大则递归进入右子树
         }
         else {
            temp = node;
@@ -93,10 +93,10 @@ public class BinarySearchTree<T extends Comparable<T>> {
             return new BinaryTreeNode<T>(e);
         }
         if (e.compareTo(node.data)<0){
-            node.lc = insert(node.lc,e);
+            node.lc = insert(node.lc,e);//递归进入左子树
         }
         else if (e.compareTo(node.data)>0){
-            node.rc = insert(node.rc,e);
+            node.rc = insert(node.rc,e);//递归进入右子树
         }
         else {
             System.out.println("insert error! ");
@@ -115,25 +115,25 @@ public class BinarySearchTree<T extends Comparable<T>> {
             return null;
         }
         if (e.compareTo(node.data)<0){
-            node.lc = remove(node.lc,e);
+            node.lc = remove(node.lc,e);//递归进入左子树
         }
         else if (e.compareTo(node.data)>0){
-            node.rc = remove(node.rc,e);
+            node.rc = remove(node.rc,e);//递归进入右子树
         }
-        else {
-            if (node.lc == null){
+        else {//当删除的是当前节点时
+            if (node.lc == null){//右子树不为空则替代
                 temp = node.rc;
                 node.rc = null;
                 node = temp;
                 size--;
             }
-            else if (node.rc ==null){
+            else if (node.rc ==null){//左子树不为空则替代
                 temp =node.lc;
                 node.lc = null;
                 node = temp;
                 size--;
             }
-            else{
+            else{//左右子树都不为空，获取右子树中最小者，替换该节点数据域，然后删除这个最小者的原节点
                temp = getMin(node.rc);
                node.data = temp.data;
                node.rc = remove(node.rc,node.data);
@@ -219,7 +219,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
     }
 
     /**
-     * 先序遍历迭代B版
+     * 先序遍历迭代B版，更推荐
      */
     public void preorderstackB(){
         if (root == null) {

@@ -1,7 +1,5 @@
 package Tree;
-
 import java.util.NoSuchElementException;
-
 /**
  * 使用向量实现二叉树结构，数组顺序为层次遍历，没有叶子的节点为0
  * @param <T>
@@ -11,7 +9,6 @@ public class SeqBinaryTree<T> {
     public int deep;
     public int capacity;
     public Object[] nodes;
-
     /**
      *构造函数
      */
@@ -19,25 +16,21 @@ public class SeqBinaryTree<T> {
         this.deep = DEFAULTDEEP;
         nodes = new Object[capacity = (int) Math.pow(2, deep) - 1];
     }
-
     public SeqBinaryTree(int deep){
         this.deep = deep;
         nodes = new Object[capacity = (int) Math.pow(2, deep) - 1];
     }
-
     public SeqBinaryTree(int deep,int rootData){
         this.deep = deep;
         nodes = new Object[capacity = (int) Math.pow(2, deep) - 1];
         nodes[0] = rootData;
     }
-
     /**
      *是否为空树
      */
     public boolean isEmpty(){
         return nodes[0] == null;
     }
-
     /**
      *获取对应父节点的下标
      */
@@ -47,7 +40,6 @@ public class SeqBinaryTree<T> {
         }
         return (sonIndex-1)/2;
     }
-
     /**
      *增加新节点
      */
@@ -59,12 +51,12 @@ public class SeqBinaryTree<T> {
             throw new NoSuchElementException();
         }
         if (left){
-            if (nodes[parentIndex*2+1]!=null) return false;
+            if (nodes[parentIndex*2+1]!=null) return false;//左子树不为空，就赋值
             nodes[parentIndex*2+1] = data;
             return true;
         }
         else{
-            if (nodes[parentIndex*2+2]!=null) return false;
+            if (nodes[parentIndex*2+2]!=null) return false;//右子树不为空，就赋值
             nodes[parentIndex*2+2] = data;
             return true;
         }
@@ -77,7 +69,7 @@ public class SeqBinaryTree<T> {
         if (index>=capacity){
             throw new NullPointerException();
         }
-        nodes[index] = null;
+        nodes[index] = null;//将节点置空
         if (index == capacity-1){
             capacity--;
         }
@@ -94,14 +86,12 @@ public class SeqBinaryTree<T> {
         }
         return -1;
     }
-
     /**
      *获取根节点数据
      */
     public Object getRoot() {
         return  nodes[0];
     }
-
     public void print(){
         for (int i = 0;i<capacity;i++){
             System.out.print(nodes[i]+" ");
