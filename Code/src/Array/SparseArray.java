@@ -1,5 +1,4 @@
 package Array;
-
 /**
  *  稀疏矩阵使用
  */
@@ -19,7 +18,6 @@ public class SparseArray {
             }
             System.out.println();
         }
-
         //转换成稀疏数组,先遍历有多少个数据,再遍历数据存储
         int sum = 0;
         for (int i = 0;i<11;i++){
@@ -65,9 +63,5 @@ public class SparseArray {
             }
             System.out.println();
         }
-
-
-
-
     }
 }
