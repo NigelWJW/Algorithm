@@ -28,9 +28,9 @@
     
     + [逆序输出的进制转换:十进制转换成base进制(递归版)](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Stack/Convert2.java)
     
-    + [栈实现逆波兰表达式](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Stack/PolandNotation)
+    + [栈实现逆波兰表达式](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Stack/PolandNotation.java)
     
-    + [栈实现计算器](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Stack/Calculator)
+    + [栈实现计算器](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Stack/Calculator.java)
     
     + [试探回溯法实现八皇后问题]
     
