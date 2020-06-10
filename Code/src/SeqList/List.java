@@ -1,4 +1,7 @@
 package SeqList;
+
+import java.util.Stack;
+
 /**
  * 单链表操作
  */
@@ -113,6 +116,75 @@ public class List<T extends Comparable<T>> {
         size--;
         return p;
     }
+    /**
+     * 单链表的有效个数,不用size属性，遍历
+     */
+    public int getSize(){
+        if (header.succ == null){//空链表
+            return 0;
+        }
+        int length = 0;
+        LNode<T> cur = header.succ;
+        while (cur.succ!= null){
+            length++;
+            cur = cur.succ;
+        }
+        return length;
+    }
+    /**
+     * 倒数第k个节点，找个数反向遍历
+     */
+    public LNode<T> getNoKeyNode(int k){
+        if (header.succ == null){
+            return null;
+        }
+        LNode<T> cur = header.succ;
+        if (k>getSize() || k<0){
+            return null;
+        }
+        for (int i = 0;i<getSize()-k;i++){
+            cur = cur.succ;
+        }
+        return cur;
+    }
+    /**
+     * 单链表的反转，用一个新头结点，双指针法遍历单链表的每个节点插在其新头节点前面
+     */
+    public void reverseList(){
+        if (header.succ == null|| header.succ.succ == null){
+            return;
+        }
+        LNode<T> cur = header.succ;
+        LNode<T> reverseNode = new LNode<>();
+        LNode<T> curNext = null;//表示当前节点的下一个节点标识原链表位置
+        while(cur!=null){
+            curNext = cur.succ;
+            cur.succ = reverseNode.succ;//将当前节点加入新头结点后面
+            reverseNode.succ = cur;
+            cur = curNext;//将指针移动回去
+        }
+        header.succ = reverseNode.succ;
+    }
+    /**
+     * 逆序打印单链表-第一种方法是先反转再遍历但是破坏结构，第二种方法是用栈,遍历链表入栈，再遍历栈
+     */
+    public void reversePrint(){
+        if (header.succ != null){
+            return;
+        }
+        Stack<LNode<T>> stack = new Stack<>();
+        LNode<T> cur = header.succ;
+        while (cur!=null){
+            stack.push(cur);
+            cur = cur.succ;
+        }
+        while (stack.size()>0){
+            System.out.println(stack.pop());
+        }
+    }
+
+
+
     /**
      * 打印输出单链表
      */
