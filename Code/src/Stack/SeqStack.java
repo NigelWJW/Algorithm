@@ -37,10 +37,16 @@ public class SeqStack<T extends Comparable<T>>{
         return top == -1;
     }
     /**
+     *判断栈是否为满
+     */
+    public boolean isFull(){
+        return top == capacity-1;
+    }
+    /**
      *删除栈顶元素
      */
     public boolean pop(){
-        if (top == -1){
+        if (isEmpty()){
             System.out.println(" 栈已空 ");
             return false;
         }
@@ -55,7 +61,7 @@ public class SeqStack<T extends Comparable<T>>{
      * @param e
      */
     public boolean push(int e){
-        if (top ==capacity-1){
+        if (isFull()){
             System.out.print(" 栈已满 ");
             return false;
         }
@@ -63,6 +69,19 @@ public class SeqStack<T extends Comparable<T>>{
         size++;
         return true;
     }
+    /**
+     * 遍历
+     */
+    public void list(){
+        if (isEmpty()){
+            System.out.println("error");
+            return;
+        }//从栈顶开始遍历
+        for (int i = top;i>-1;i++){
+            System.out.printf("stack[%d] = %d",i,stack[i]);
+        }
+    }
+
     /**
      *打印栈
      */
