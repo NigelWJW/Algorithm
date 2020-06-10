@@ -6,11 +6,13 @@
     
 * [数据结构与算法（二）链表实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/SeqList).
 
-    + [有序无序单链表的自建前后插删查改唯一化](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/SeqList/List.java)
+    + [单链表的自建前后插删查改唯一化](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/SeqList/List.java)
     
-    + [有序无序双向链表的自建前后插删查改唯一化](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/SeqList/LinkedList.java)
+    + [双向链表的自建前后插删查改唯一化](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/SeqList/LinkedList.java)
     
-* [数据结构与算法（三）栈及栈的应用实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/SeqVector).
+    + [循环链表约瑟夫问题](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/SeqList/LoopList.java)
+     
+* [数据结构与算法（三）栈及栈的应用实现](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Stack).
 
     + [向量实现单向栈的压栈出栈等](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Stack/SeqStack.java)
     
@@ -26,7 +28,9 @@
     
     + [逆序输出的进制转换:十进制转换成base进制(递归版)](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Stack/Convert2.java)
     
-    + [栈实现逆波兰表达式]
+    + [栈实现逆波兰表达式](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Stack/PolandNotation)
+    
+    + [栈实现计算器](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Stack/Calculator)
     
     + [试探回溯法实现八皇后问题]
     
@@ -40,7 +44,9 @@
     
     + [链表实现循环队列的入队出队](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Queue/LoopSeqQueue.java)
     
-    + [队列应用循环分配器事先银行服务模拟]
+    + [队列应用银行服务模拟](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Queue/BankArrayQueue.java)
+    
+    + [队列应用循环分配器](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Queue/LoopAllocation.java)
         
 * [数据结构与算法（五）二叉树的实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/SeqVector).
 
@@ -119,7 +125,11 @@
 
 * [数据结构与算法（十三）贪心回溯分支限界算法实现]
 
-* [数据结构与算法（十四）其他杂项实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Introduction).
+* [数据结构与算法（十四）数组](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Array).
+
+    + [稀疏数组实现](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Array/SparseArray.java)
+ 
+* [数据结构与算法（十五）其他杂项实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Introduction).
 
 
 
