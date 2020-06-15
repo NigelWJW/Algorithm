@@ -32,9 +32,9 @@
     
     + [栈实现计算器](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Stack/Calculator.java)
     
-    + [试探回溯法实现八皇后问题](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Stack/Queen.java)
+    + [试探回溯法实现八皇后问题](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Recursion/Queen.java)
     
-    + [试探回溯法实现迷宫问题](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Stack/Maze.java)
+    + [试探回溯法实现迷宫问题](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Recursion/Maze.java)
     
 * [数据结构与算法（四）队列及队列应用实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Queue).
 
