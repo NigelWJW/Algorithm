@@ -1,9 +1,17 @@
 package Sort;
 /**
- * 插入排序算法
+ * 简单插入排序算法-简单实现，麻烦效率低
  */
 public class InsertSort {
-    public void insertsort(int[] array){
+    public static void main(String[] args) {
+        int[] A = {2, 3, 5, 1, 23, 6, 78, 34};
+        InsertSort is =new InsertSort();
+        is.print(A);
+        is.insertSort(A);
+        is.print(A);
+    }
+    //插入算法
+    public void insertSort(int[] array){
         for (int i = 1;i<array.length;i++){
             int temp =array[i];//记录当前元素值
             int n =0;
@@ -33,13 +41,5 @@ public class InsertSort {
         }
         System.out.println();
     }
-    public static void main(String[] args) {
-        int[] A = {2, 3, 5, 1, 23, 6, 78, 34};
-        InsertSort is =new InsertSort();
-        is.print(A);
-        is.insertsort(A);
-        is.print(A);
-    }
-
 
 }

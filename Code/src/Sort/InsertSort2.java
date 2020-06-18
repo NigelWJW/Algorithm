@@ -1,13 +1,16 @@
 package Sort;
+/**
+ * 插入排序高效版
+ */
 public class InsertSort2 {
     public void insertSort(int[] array){
-        for (int i = 1;i<array.length;i++){
-            int temp = array[i];
+        for (int i = 1;i<array.length;i++){//从第二个元素开始
+            int temp = array[i];//记录当前元素值和索引
             int j;
             for (j = i ; j>0 && array[j-1]>temp ; j--){//前面元素大就将值赋给当前元素
                 array[j] = array[j-1];
             }
-            array[j] = temp;//将temp赋给合适位置
+            array[j] = temp;//j是从i开始的，所以最后指向的就是合适位置
         }
     }
     public void print(int[] A){

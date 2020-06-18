@@ -1,11 +1,11 @@
 package Search;
 
 /**
- * Fibonacci查找法,使用fibonacci数列的项来代替简单的中间项，减少失败的查找次数，每次都从左查找可局部建立左长右短的查找结构，类似左式堆
- * 构建Fib数列类，其中初始化
- * f=fib(-1)=1,指向前一项
- * g=fib(0)=0，指向当前项
- * 构造类时反复调用next，prev方向相反
+ * Fibonacci���ҷ�,ʹ��fibonacci���е���������򵥵��м������ʧ�ܵĲ��Ҵ�����ÿ�ζ�������ҿɾֲ��������Ҷ̵Ĳ��ҽṹ��������ʽ��
+ * ����Fib�����࣬���г�ʼ��
+ * f=fib(-1)=1,ָ��ǰһ��
+ * g=fib(0)=0��ָ��ǰ��
+ * ������ʱ��������next��prev�����෴
  */
 class Fib{
     private int f,g;
@@ -36,7 +36,7 @@ public class fibSearch {
     private int fibsearch(int[] A,int e,int lo,int hi){
         Fib fib = new Fib(hi-lo);
         while(lo<hi){
-            //通过向前查找找到合适的fib(k-1)
+            //ͨ����ǰ�����ҵ����ʵ�fib(k-1)
             while(hi-lo<fib.get()){
                 System.out.println("get"+fib.get());
                 fib.prev();

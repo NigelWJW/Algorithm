@@ -1,17 +1,17 @@
 package Stack;
 import java.util.Stack;
 /**
- * ä½¿ç”¨javaå°è£…æ ˆç±»å®ç°é€’å½’åµŒå¥—çš„æ‹¬å·åŒ¹é…
+ * Ê¹ÓÃjava·â×°Õ»ÀàÊµÏÖµİ¹éÇ¶Ì×µÄÀ¨ºÅÆ¥Åä
  */
 public class ExpStackMatching {
     public boolean Matching(String exp){
         Stack<Character> stack  = new Stack<Character>();
         for (int i = 0;i< exp.length();i++){
-            switch (exp.charAt(i)){//åˆ¤å®šå½“å‰å­—ç¬¦å¦‚æœæ˜¯å·¦æ‹¬å¼§å…¥æ ˆï¼Œä¸ç„¶åˆ¤å®šæ˜¯å¦æ˜¯å¯¹åº”å³æ‹¬å¼§
+            switch (exp.charAt(i)){//ÅĞ¶¨µ±Ç°×Ö·ûÈç¹ûÊÇ×óÀ¨»¡ÈëÕ»£¬²»È»ÅĞ¶¨ÊÇ·ñÊÇ¶ÔÓ¦ÓÒÀ¨»¡
                 case '(': case '[': case '{': stack.push(exp.charAt(i));System.out.print(exp.charAt(i));System.out.println(i + " ");break;
-                case ')': if ( !(stack.empty()) && (stack.peek()== '(') ){System.out.print(i + " ");System.out.println(")è¿”å›æˆåŠŸ "); stack.pop();}break;
-                case '}': if (!(stack.empty()) && (stack.peek()== '{') ){ System.out.print(i + " ");System.out.println("}è¿”å›æˆåŠŸ "); stack.pop();}break;
-                case ']': if (!(stack.empty()) && (stack.peek()== '[') ){ System.out.print(i + " ");System.out.println("]è¿”å›æˆåŠŸ "); stack.pop();}break;
+                case ')': if ( !(stack.empty()) && (stack.peek()== '(') ){System.out.print(i + " ");System.out.println(")·µ»Ø³É¹¦ "); stack.pop();}break;
+                case '}': if (!(stack.empty()) && (stack.peek()== '{') ){ System.out.print(i + " ");System.out.println("}·µ»Ø³É¹¦ "); stack.pop();}break;
+                case ']': if (!(stack.empty()) && (stack.peek()== '[') ){ System.out.print(i + " ");System.out.println("]·µ»Ø³É¹¦ "); stack.pop();}break;
                 default:break;
             }
         }
@@ -24,8 +24,8 @@ public class ExpStackMatching {
         String expression = "{1+2+[3+5]+{[5+6]+7+(8+9)}}" ;
         boolean flag = esm.Matching(expression) ;
         if(flag)
-        { System.out.println("åŒ¹é…æˆåŠŸï¼");}
+        { System.out.println("Æ¥Åä³É¹¦£¡");}
         else
-        { System.out.println(" åŒ¹é…å¤±è´¥ ");}
+        { System.out.println(" Æ¥ÅäÊ§°Ü ");}
     }
 }

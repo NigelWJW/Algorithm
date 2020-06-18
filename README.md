@@ -1,4 +1,3 @@
-
 ### 数据结构与算法内容清单（java实现）：
 * [数据结构与算法（一）向量实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/SeqVector).
 
@@ -96,21 +95,31 @@
     
 * [数据结构与算法（十）排序算法实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Sort).
 
-    + [冒泡排序](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/BubbleSort.java	)
+    + [冒泡排序高效版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/BubbleSort.java	)
     
-    + [插入排序A](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/InsertSort.java)
+    + [冒泡排序改进版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/BubbleSort2.java)
+    
+    + [选择排序A](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/SelectSort.java)  
+          
+    + [选择排序B](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/SelectSort2.java)
+    
+    + [插入排序低效版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/InsertSort.java)
         
-    + [插入排序B](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/InsertSort.java)
-            
-    + [选择排序](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/SelectSort.java)
-                
-    + [二路归并版本](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/mergeSort.java)
+    + [插入排序高效版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/InsertSort2.java)
     
-    + [实现快速排序]
+    + [插入排序改进版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/InsertSort3.java)
     
-    + [实现希尔排序]
+    + [希尔排序](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/ShellSort.java)            
+                   
+    + [归并排序](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/MergeSort.java)
+    
+    + [快速排序](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/QuickSort.java)
+    
+    + [基数(堆)排序](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/RadixSort.java)    
 
 * [数据结构与算法（十一）查找算法实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Search).
+
+    + [线性查找](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/SeqSearch.java)
 
     + [二分查找版本A](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSeach.java)
     
@@ -118,8 +127,11 @@
     
     + [二分查找版本C](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSeach3.java)
     
-    + [Fibinacci二分查找](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/fibSearch.java)
-
+    + [Fibinacci查找](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/fibSearch.java)
+    
+    + [Fibinacci查找改进版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/FibonacciSearch.java)
+        
+    + [插值查找](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/InsertValueSearch.java)
 
 * [数据结构与算法（十二）分治法及动态规划实现]
 
