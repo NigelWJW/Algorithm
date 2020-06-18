@@ -71,11 +71,9 @@
     
     + [图的dijkstra算法]
 
-* [数据结构与算法（七）词典及散列表(哈希表)实现]
+* [数据结构与算法（七）哈希表实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/HashTable).
 
-    + [实现跳转表]
-
-    + [实现散列表及桶排序]
+    + [实现哈希表实例-员工信息检索](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/HashTable/HashTable).
     
 * [数据结构与算法（八）优先级队列及堆实现](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Heap)
 
