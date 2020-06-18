@@ -121,15 +121,15 @@
 
     + [线性查找](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/SeqSearch.java)
 
-    + [二分查找版本A](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSeach.java)
+    + [二分查找版本简单版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSeach.java)
     
-    + [二分查找版本B](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSeach2.java)
+    + [二分查找版本高效版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSeach2.java)
     
-    + [二分查找版本C](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSeach3.java)
+    + [二分查找版本改进版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSeach3.java)
     
-    + [Fibinacci查找](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/fibSearch.java)
+    + [斐波那契查找](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/fibSearch.java)
     
-    + [Fibinacci查找改进版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/FibonacciSearch.java)
+    + [斐波那契查找改进版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/FibonacciSearch.java)
         
     + [插值查找](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/InsertValueSearch.java)
 
