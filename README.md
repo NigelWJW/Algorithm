@@ -58,14 +58,16 @@
     + [线索二叉树的操作](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Tree/ThreadTree.java)
        
     + [AVL树的操作](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Tree/AVLTree.java)
+
+    + [Huffman树的操作](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Tree/HuffmanTree.java)
     
-    + [实现Huffman编码树]
+    + [Huffman编码树的操作](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Tree/HuffmanCode.java)
     
-    + [实现伸展树]
+    + [伸展树的操作]
         
-    + [实现B树及红黑树]
+    + [B树及红黑树的操作]
             
-    + [实现kd树]
+    + [kd树的操作]
     
 * [数据结构与算法（六）图遍历实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Graph).
 
