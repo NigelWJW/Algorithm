@@ -2,7 +2,7 @@ package Tree;
 import java.util.ArrayDeque;
 import java.util.Deque;
 /**
- *二叉树链表类
+ * 链表存储二叉树
  */
 public class LinkedListBinaryTree<T> {
     public BinaryTreeNode<T> root;//根节点

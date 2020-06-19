@@ -1,7 +1,6 @@
 package Tree;
-
 /**
- * 向量实现二叉树测试
+ * 顺序存储二叉树测试
  */
 public class SeqBinaryTreeTest {
     public static void main(String[] args){

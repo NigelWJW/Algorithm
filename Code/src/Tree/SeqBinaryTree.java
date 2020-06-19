@@ -1,7 +1,7 @@
 package Tree;
 import java.util.NoSuchElementException;
 /**
- * 使用向量实现二叉树结构，数组顺序为层次遍历，没有叶子的节点为0
+ * 顺序存储二叉树
  * @param <T>
  */
 public class SeqBinaryTree<T> {
