@@ -2,7 +2,6 @@ package Graph;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
-
 /**
  * 实现图的广度遍历算法BFS和深度遍历算法DFS（无向图）
  */
@@ -11,7 +10,6 @@ public class GraphSearch {
     public int[][] edge;//边信息
     public int verticeNum;//节点个数
     public boolean[] visited;//是否遍历
-
     /**
      * 初始化图
      */
@@ -19,11 +17,9 @@ public class GraphSearch {
         int MAXNUM = 20;
         init(MAXNUM);
     }
-
     public GraphSearch(int n){
         init(n);
     }
-
     public void init(int n){
         verticeNum = n;
         vertix = new char[verticeNum];
@@ -31,10 +27,10 @@ public class GraphSearch {
         visited = new boolean[verticeNum];
         for (int i = 0;i<verticeNum;i++){
             for (int j=0;j<verticeNum;j++){
-                edge[i][j] = 0;
+                edge[i][j] = 0;//初始化边值
             }
         }
-        Arrays.fill(visited, false);
+        Arrays.fill(visited, false);//初始化遍历表
     }
 
     /**
@@ -47,21 +43,18 @@ public class GraphSearch {
         edge[i][j] = 1;
         edge[j][i] = 1;
     }
-
     /**
      *加载节点
      */
     public void setVertice(char[] vertice){
         this.vertix = vertice;
     }
-
     /**
      *加载访问情况
      */
     public void setVisited(boolean[] visited){
         this.visited = visited;
     }
-
     /**
      *打印矩阵
      */
@@ -83,7 +76,7 @@ public class GraphSearch {
             if (!visited[i]){//当没有遍历的节点
                 visited[i] = true;
                 System.out.print(vertix[i] + " ");
-                q.add(i);//将当前没有遍历的节点加入队列
+                q.add(i);//将当前节点加入队列
                 while(!q.isEmpty()){//当队列不为空
                     int temp = q.poll();//取出队首
                     for (int j = 0;j<verticeNum;j++){//依次遍历有关系的边
@@ -99,8 +92,6 @@ public class GraphSearch {
         System.out.println();
         print(edge);
     }
-
-
     /**
      * 深度优先遍历（递归）
      */
@@ -113,7 +104,6 @@ public class GraphSearch {
         System.out.println();
         print(edge);
     }
-
     public void traverse(int i){
         visited[i] = true;//更新访问情况
         System.out.print(vertix[i]);

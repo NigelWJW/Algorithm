@@ -1,14 +1,14 @@
 package Graph;
 /**
- * å›¾éå†æµ‹è¯•
+ * Í¼±éÀú²âÊÔ
  */
 public class GraphSearchTest {
     public static void main(String[] args) {
         GraphSearch g = new GraphSearch(9);
         char[] vertices = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'};
-        // è®¾ç½®é¡¶ç‚¹é›†
+        // ÉèÖÃ¶¥µã¼¯
         g.setVertice(vertices);
-        // æ·»åŠ è¾¹
+        // Ìí¼Ó±ß
         g.insertEdge(0, 1);
         g.insertEdge(0, 5);
         g.insertEdge(1, 0);
@@ -39,7 +39,7 @@ public class GraphSearchTest {
         g.insertEdge(8, 1);
         g.insertEdge(8, 2);
         g.insertEdge(8, 3);
-        System.out.print("å¹¿åº¦ä¼˜å…ˆéå†(é˜Ÿåˆ—)ï¼š");
+        System.out.print("¹ã¶ÈÓÅÏÈ±éÀú(¶ÓÁĞ)£º");
         g.dfs();
         g.bfs();
 

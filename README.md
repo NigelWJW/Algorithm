@@ -71,8 +71,10 @@
     
 * [数据结构与算法（六）图遍历实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Graph).
 
-    + [图的广度BFS和深度DFS遍历算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Graph/GraphSearch.java)
+    + [图结构的操作](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Graph/GraphSearch.java)
     
+    + [图结构的操作其他版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Graph/Graph.java)
+       
     + [图的dijkstra算法]
 
 * [数据结构与算法（七）哈希表实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/HashTable).
