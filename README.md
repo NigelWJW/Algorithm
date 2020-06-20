@@ -74,8 +74,14 @@
     + [图结构的操作](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Graph/GraphSearch.java)
     
     + [图结构的操作其他版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Graph/Graph.java)
+    
+    + [普利姆Prim算法]
        
-    + [图的dijkstra算法]
+    + [克鲁斯卡尔Kruskal算法]
+    
+    + [迪杰斯特拉Dijkstra算法]
+    
+    + [弗洛伊德Floyd算法]
 
 * [数据结构与算法（七）哈希表实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/HashTable).
 
@@ -133,6 +139,8 @@
     
     + [二分查找改进版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSeach3.java)
     
+    + [二分查找递归版版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/BinarySearch.java)   
+     
     + [斐波那契查找](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/fibSearch.java)
     
     + [斐波那契查找改进版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/FibonacciSearch.java)
@@ -141,7 +149,13 @@
 
 * [数据结构与算法（十二）分治法及动态规划实现]
 
-* [数据结构与算法（十三）贪心回溯分支限界算法实现]
+    + [汉诺塔分治算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Divide/Hanoi.java)
+    
+    + [0-1背包动态规划算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Divide/KnapsackProblem.java)
+
+* [数据结构与算法（十三）贪心回溯算法实现]
+
+    + [马踏棋盘(骑士周游问题)算法]
 
 * [数据结构与算法（十四）数组](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Array).
 
