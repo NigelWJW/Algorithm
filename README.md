@@ -95,9 +95,11 @@
     
     + [左式堆上滤下滤、Floyd建堆、堆排序算法]
 
-* [数据结构与算法（九）串匹配实现]
+* [数据结构与算法（九）串匹配实现](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/String)
 
-    + [实现KMP算法]
+    + [暴力破解串方法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/String/ViolenceMatch.java)
+    
+    + [实现KMP算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/String/KMP.java)
    
     + [实现BM算法]
     
@@ -147,7 +149,7 @@
         
     + [插值查找](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/InsertValueSearch.java)
 
-* [数据结构与算法（十二）分治法及动态规划实现]
+* [数据结构与算法（十二）分治法及动态规划实现](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Divide)
 
     + [汉诺塔分治算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Divide/Hanoi.java)
     
