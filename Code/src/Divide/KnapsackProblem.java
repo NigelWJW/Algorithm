@@ -65,7 +65,7 @@ public class KnapsackProblem {
 //		}
             int i = path.length - 1; //行的最大下标
             int j = path[0].length - 1;  //列的最大下标
-            while(i > 0 && j > 0 ) { //从path的最后开始找
+            while(i > 0 && j > 0 ) { //从path的最后开始找，逆向遍历
                 if(path[i][j] == 1) {
                     System.out.printf("第%d个商品放入到背包\n", i);
                     j -= w[i-1]; //w[i-1]
