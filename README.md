@@ -75,13 +75,15 @@
     
     + [图结构的操作其他版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Graph/Graph.java)
     
-    + [普利姆Prim算法]
-       
-    + [克鲁斯卡尔Kruskal算法]
+    + [普利姆Prim最小生成树算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Graph/Prim.java)
+           
+    + [克鲁斯卡尔Kruskal最小生成树算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Graph/KruskalCase.java)   
+
+    + [迪杰斯特拉Dijkstra算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Graph/Dijkstra.java)   
     
-    + [迪杰斯特拉Dijkstra算法]
+    + [弗洛伊德Floyd算法](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Graph/Floyd.java)   
     
-    + [弗洛伊德Floyd算法]
+    + [DFS应用马踏棋盘(骑士周游问题)问题](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Graph/HorseChessboard.java)   
 
 * [数据结构与算法（七）哈希表实现](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/HashTable).
 
@@ -158,8 +160,6 @@
 * [数据结构与算法（十三）贪心回溯算法实现](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Greedy)
 
     + [电台集合覆盖问题](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Greedy/GreedyAlgorithm.java)
-    
-    + [马踏棋盘(骑士周游问题)问题]
     
 * [数据结构与算法（十四）数组](https://github.com/NigelWJW/Algorithm/tree/master/Code/src/Array).
 
