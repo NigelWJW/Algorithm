@@ -1,6 +1,10 @@
 package Graph;
 import java.util.Arrays;
-
+/**
+ * 弗洛伊德算法-求最短路径
+ * 迪杰斯特拉是通过选定的被访问顶点，而弗洛伊德算法是每个顶点都是出发点
+ * 即每个顶点都作为中间顶点遍历
+ */
 public class Floyd {
         public static void main(String[] args) {
             // 测试看看图是否创建成功
@@ -22,7 +26,6 @@ public class Floyd {
             GraphF.floyd();
             GraphF.show();
         }
-
     }
 
     // 创建图
@@ -30,10 +33,8 @@ public class Floyd {
         private char[] vertex; // 存放顶点的数组
         private int[][] dis; // 保存，从各个顶点出发到其它顶点的距离，最后的结果，也是保留在该数组
         private int[][] pre;// 保存到达目标顶点的前驱顶点
-
         // 构造器
         /**
-         *
          * @param length
          *            大小
          * @param matrix
@@ -53,7 +54,6 @@ public class Floyd {
 
         // 显示pre数组和dis数组
         public void show() {
-
             //为了显示便于阅读，我们优化一下输出
             char[] vertex = { 'A', 'B', 'C', 'D', 'E', 'F', 'G' };
             for (int k = 0; k < dis.length; k++) {

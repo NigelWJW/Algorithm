@@ -1,9 +1,10 @@
 package Graph;
-
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Comparator;
-
+/**
+ * 马踏棋盘算法-图的深度优先应用
+ */
 public class HorseChessboard {
         private static int X; // 棋盘的列数
         private static int Y; // 棋盘的行数
@@ -11,7 +12,6 @@ public class HorseChessboard {
         private static boolean visited[];
         //使用一个属性，标记是否棋盘的所有位置都被访问
         private static boolean finished; // 如果为true,表示成功
-
         public static void main(String[] args) {
             System.out.println("骑士周游算法，开始运行~~");
             //测试骑士周游算法是否正确
@@ -27,7 +27,6 @@ public class HorseChessboard {
             traversalChessboard(chessboard, row - 1, column - 1, 1);
             long end = System.currentTimeMillis();
             System.out.println("共耗时: " + (end - start) + " 毫秒");
-
             //输出棋盘的最后情况
             for(int[] rows : chessboard) {
                 for(int step: rows) {
@@ -122,7 +121,6 @@ public class HorseChessboard {
         //根据当前这个一步的所有的下一步的选择位置，进行非递减排序, 减少回溯的次数
         public static void sort(ArrayList<Point> ps) {
             ps.sort(new Comparator<Point>() {
-
                 @Override
                 public int compare(Point o1, Point o2) {
                     // TODO Auto-generated method stub
@@ -138,7 +136,6 @@ public class HorseChessboard {
                         return 1;
                     }
                 }
-
             });
         }
     }
