@@ -111,7 +111,7 @@
 
     + [冒泡排序高效版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/BubbleSort.java	)
     
-    + [冒泡排序改进版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/BubbleSort2.java)
+    + [冒泡排序改进版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/BobbleSort2.java)
     
     + [选择排序基础版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Sort/SelectSort.java)  
           
