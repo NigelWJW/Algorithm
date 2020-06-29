@@ -137,11 +137,11 @@
 
     + [线性查找](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/SeqSearch.java)
 
-    + [二分查找简单版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSeach.java)
+    + [二分查找简单版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSearch.java)
     
-    + [二分查找高效版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSeach2.java)
+    + [二分查找高效版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSearch2.java)
     
-    + [二分查找改进版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSeach3.java)
+    + [二分查找改进版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/binSearch3.java)
     
     + [二分查找递归版版](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Search/BinarySearch.java)   
      
