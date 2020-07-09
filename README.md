@@ -63,6 +63,8 @@
     
     + [Huffman编码树的操作](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Tree/HuffmanCode.java)
     
+    + [字典树的操作](https://github.com/NigelWJW/Algorithm/blob/master/Code/src/Tree/Trie.java)    
+    
     + [伸展树的操作]
         
     + [B树及红黑树的操作]
